@@ -7,7 +7,7 @@ import sys
 pygame.init()
 
 # Let's create a caption for the game window
-pygame.display.set_caption("Hello World")
+pygame.display.set_caption("Joshua Lee")
 # TODO 00: Change the window caption to say your name.
 
 # Now the screen is where all the magic is going to happen. Our screen will
@@ -38,12 +38,12 @@ while True:
 
     # TODO 01: Make the background white by uncommenting the line below
     # screen.fill(pygame.Color("Gray"))
-
+    screen.fill(pygame.Color("Gray"))
     # Draw things on the screen
 
     # TODO 02: Try to draw a circle (any size, any color, anywhere)
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
-
+    pygame.draw.circle(screen, pygame.Color("Cyan"), (50,50), 25)
     # TODO 03: Try to draw a red circle in the middle of the screen with a radius 100
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
 
