@@ -8,17 +8,26 @@ Authors: David Mutchler, Sana Ebrahimi, Mohammed Noureddine, Vibha Alangar,
 
 import random
 import math
-
+import pygame
+import sys
+pygame.init()
 
 ###############################################################################
 # TODO 1: Smile
 ###############################################################################
+while True:
+    screen = pygame.display.set_mode((640, 480))
+    pygame.draw.circle(screen, pygame.Color("Red"), (50, 50), 25)
+    pygame.display.update()
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
 
 ###############################################################################
 # TODO 2:
 #   Write a statement that prints your name
 ###############################################################################
-
+print("Joshua Lee")
 
 ###############################################################################
 # Part 1: Numbers, Arithmetic, and Precedence.
@@ -35,11 +44,11 @@ import math
 #   and run the program, checking that what gets printed is what you expect.
 ###############################################################################
 
-# print()
-# print("_TODO 3:")
-# print("4 + 8 evaluates to:   ", 4 + 8)
-# print("7 * 10 evaluates to:  ", 7 * 10)
-# print("1.53 + 8 evaluates to:", 1.53 + 8)
+print()
+print("_TODO 3:")
+print("4 + 8 evaluates to:   ", 4 + 8)
+print("7 * 10 evaluates to:  ", 7 * 10)
+print("1.53 + 8 evaluates to:", 1.53 + 8)
 
 ###############################################################################
 # TODO: 4.
